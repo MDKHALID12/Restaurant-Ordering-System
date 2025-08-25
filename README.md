@@ -1,27 +1,30 @@
-# Restauranant.py
-# Restaurant Ordering System (Python)
+menu = {
+    'Pizza':40,
+    'Pasta':50,
+    'Burger':60,
+    'Coffee':70,
+    'cold coffee':80,
+    'salad':90,
+    'sandwich':100
+}
 
-This is a simple **Restaurant Ordering System** built using Python.  
-It allows users to order food items from a menu and calculates the total bill.
+print("Welcome to Sahara Restuarant")
+print("Pizza: Rs40\nPasta: Rs50\nBurger: Rs60\nCoffee: Rs70\ncold coffee: Rs80\nsalad: Rs90\nsandwich: Rs100")
+order_total = 0
+item_1 = input("Enter the name of item you want to order =")
+if item_1 in menu:
+    order_total += menu[item_1]
+    print(f"Your item {item_1} has been added to your order")
+else:
+    print(f"ordered item {item_1} is not available yet!")
+another_order = input("Do you want to add another item?(YES/NO)")
+if another_order == "YES":
+    item_2 = input("Enter the name of second item =")
+    if item_2 in menu:
+        order_total += menu[item_2]
+        print(f"item {item_2} has been added to order")
+    else:
+        print(f"ordered item {item_2} is not available!")
 
----
-
-# Features
-- Displays a menu with food items and prices
-- Takes order from the customer
-- Checks if the item is available in the menu
-- Calculates the **total bill amount**
-
----
-
-## Technologies Used
-- Python 3
-
----
-
-## 🚀 How to Run
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MDKHALID12/Restaurant-Ordering-System.git
-
-
+print(f"The total amount of item to pay is {order_total}")
+print(" Thank You for visiting Sahara Restaurant!")

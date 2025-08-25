@@ -22,6 +22,6 @@ It allows users to order food items from a menu and calculates the total bill.
 ## 🚀 How to Run
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/Restaurant-Ordering-System.git
+   git clone https://github.com/MDKHALID12/Restaurant-Ordering-System.git
 
 
